@@ -3,7 +3,7 @@ from space_titanic_test_fe import df_test, X_test2, df_test1
 
 #final prediction
 predictions = best_rf.predict(X_test2)
-df_test['predictions'] = predictions
+df_test['Transported'] = predictions
 df_test['PassengerId'] = df_test1['PassengerId']
 
 #outcome 
